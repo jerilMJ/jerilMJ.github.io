@@ -1,0 +1,106 @@
+header {
+  width: 100%;
+  height: 100px;
+  display: table;
+}
+
+nav {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.nav-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.nav-list .nav-link {
+  border: 1.5px solid #222;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.nav-list li a:hover {
+  background: #1d1128;
+}
+
+.hovered {
+  -webkit-animation: zoom-in 0.4s ease-out 0s forwards;
+          animation: zoom-in 0.4s ease-out 0s forwards;
+}
+
+.nav-list li {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.nav-list .img-list-item img {
+  width: 150px;
+}
+
+@-webkit-keyframes zoom-in {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes zoom-in {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+.top-nav {
+  width: 50px;
+  text-align: center;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 101;
+  text-decoration: none;
+  border-radius: 100%;
+  fill: rgba(255, 255, 255, 0.5);
+  -webkit-transform: translateX(-10vh);
+          transform: translateX(-10vh);
+  -webkit-transition: fill 0.2s linear, -webkit-transform 0.2s linear;
+  transition: fill 0.2s linear, -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear, fill 0.2s linear;
+  transition: transform 0.2s linear, fill 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.top-nav-move-in {
+  -webkit-transform: translateX(0vh);
+          transform: translateX(0vh);
+}
+
+.top-nav:hover {
+  fill: rgba(144, 238, 144, 0.5);
+}
+/*# sourceMappingURL=nav.css.map */
