@@ -6,13 +6,16 @@
 }
 
 body {
-  overflow-x: hidden;
   background: -webkit-gradient(linear, left top, right top, from(#129b8e), to(#2dd583));
   background: linear-gradient(to right, #129b8e, #2dd583);
   height: 100%;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.jumbo-wrapper {
+  overflow-x: hidden;
 }
 
 .cards-container {
