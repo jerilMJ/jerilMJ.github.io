@@ -126,6 +126,7 @@ nav {
 
   header {
     position: fixed;
+    overflow-y: scroll;
     z-index: 150;
 
     nav .nav-list {

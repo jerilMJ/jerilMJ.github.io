@@ -160,6 +160,7 @@ nav {
   }
   header {
     position: fixed;
+    overflow-y: scroll;
     z-index: 150;
   }
   header nav .nav-list {

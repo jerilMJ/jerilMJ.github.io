@@ -8,7 +8,6 @@
   display: -ms-grid;
   display: grid;
   width: 100%;
-  border-radius: 10px;
   -ms-grid-columns: 0.5fr 0.5fr 2fr 0.5fr 0.5fr;
       grid-template-columns: 0.5fr 0.5fr 2fr 0.5fr 0.5fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
@@ -67,27 +66,31 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 75px;
+  width: 125px;
   height: auto;
 }
 
 .many-pics {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
   position: relative;
-  top: 60px;
-}
-
-.my-pic-cell {
+  top: 10px;
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
+}
+
+.my-pic-cell {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/5;
   position: relative;
-  top: 20px;
+  top: 40px;
 }
 
 .main-container .content {
   height: 100%;
+  padding: 30px;
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-column: 1/6;
@@ -551,6 +554,15 @@
   .my-pic-cell {
     -webkit-transform: scale(0.65);
             transform: scale(0.65);
+  }
+}
+
+@media (max-width: 850px) {
+  .wrapper {
+    height: 100vh;
+  }
+  .main-container {
+    height: 100%;
   }
 }
 /*# sourceMappingURL=carousel.css.map */
