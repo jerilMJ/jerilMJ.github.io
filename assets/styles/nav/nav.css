@@ -1,6 +1,6 @@
 header {
   width: 100%;
-  height: 100px;
+  height: 50px;
   display: table;
   -webkit-transition: -webkit-transform 0.5s linear;
   transition: -webkit-transform 0.5s linear;
@@ -22,6 +22,8 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  font-size: 0.2rem;
+  margin: 10px 0;
 }
 
 .nav-list .nav-link {
@@ -29,8 +31,15 @@ nav {
   padding: 10px;
   border-radius: 10px;
   text-decoration: none;
-  font-size: 1.2em;
   color: #fff;
+}
+
+.nav-list button {
+  background: #1d1128;
+}
+
+.nav-list .nav-link:focus {
+  outline: none;
 }
 
 .nav-list li a:hover {
@@ -56,7 +65,7 @@ nav {
 }
 
 .nav-list .img-list-item img {
-  width: 150px;
+  width: 100px;
 }
 
 @-webkit-keyframes zoom-in {
@@ -151,6 +160,10 @@ nav {
   z-index: 149;
 }
 
+.active-route {
+  background: #1d1128;
+}
+
 @media (max-width: 850px) {
   #top-nav-button {
     display: none;
@@ -164,6 +177,7 @@ nav {
     z-index: 150;
   }
   header nav .nav-list {
+    margin: 0;
     padding: 20px;
     height: 100vh;
     background: rgba(45, 213, 131, 0.8);

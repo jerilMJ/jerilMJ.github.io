@@ -1,6 +1,6 @@
 @import "../variables.scss";
 
-.wrapper {
+.carousel {
   position: relative;
   background: linear-gradient(rgba(#000, 0.8)),
     url("/assets/images/bg.svg") center;
@@ -13,7 +13,7 @@
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-.main-container {
+.carousel-item {
   background: transparent;
   height: calc(100vh - 175px);
   display: grid;
@@ -26,12 +26,17 @@
   transition: transform 0.5s linear;
 }
 
+.invis {
+  display: none;
+}
+
 .no-transitions {
   transition: none;
 }
 
-.main-container .my-pic {
+.carousel-item .my-pic {
   border-radius: 50%;
+  transform: scale(0.7);
   margin: 0 auto;
 }
 
@@ -56,12 +61,12 @@
 }
 
 .my-pic-cell {
-  grid-row: 3/5;
+  grid-row: 4/5;
   position: relative;
   top: 40px;
 }
 
-.main-container .content {
+.carousel-item .content {
   height: 100%;
   padding: 30px;
   grid-column: 1/6;
@@ -166,7 +171,7 @@
       border-radius: 5px;
       padding: 10px;
       position: relative;
-      font-size: 0.2rem;
+      font-size: 0.7rem;
 
       img {
         width: 25px;
@@ -189,7 +194,7 @@
   }
 }
 
-.wrapper button {
+.carousel button {
   background: transparent;
   border: 0;
   align-self: center;
@@ -207,32 +212,32 @@
   display: none;
 }
 
-.wrapper:hover {
+.carousel:hover {
   button {
     background: rgba(transparent, 0.4);
   }
 }
 
-.wrapper button:hover {
+.carousel button:hover {
   fill: rgba(#fff, 0.5);
 }
 
-.wrapper button:focus {
+.carousel button:focus {
   outline: 0;
 }
 
-.wrapper .left-button {
+.carousel .left-button {
   grid-row: 1/5;
   margin-right: 20px;
 }
 
-.wrapper .right-button {
+.carousel .right-button {
   grid-row: 1/5;
   grid-column: 5/6;
   margin-left: 20px;
 }
 
-.wrapper button::after {
+.carousel button::after {
   display: none;
   content: "";
   position: absolute;
@@ -252,7 +257,7 @@
   opacity: 0;
 }
 
-.wrapper button:focus:not(:active)::after {
+.carousel button:focus:not(:active)::after {
   display: block;
 }
 
@@ -328,7 +333,7 @@
 }
 
 @media (min-width: 900px) {
-  .wrapper button {
+  .carousel button {
     display: inline-block;
   }
 }
@@ -339,12 +344,12 @@
     grid-row: 1/5;
   }
 
-  .main-container {
+  .carousel-item {
     grid-template-columns: 0.5fr 2fr 1fr 0.5fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 
-  .main-container .content {
+  .carousel-item .content {
     grid-column: 2/3;
     grid-row: 2/4;
   }
@@ -392,14 +397,11 @@
 }
 
 @media (max-width: 850px) {
-  .wrapper {
+  .carousel {
     height: 100vh;
   }
 
-  .many-pics {
-  }
-
-  .main-container {
+  .carousel-item {
     height: 100%;
   }
 }

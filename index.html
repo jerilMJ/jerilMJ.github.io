@@ -12,7 +12,7 @@
     href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap"
     rel="stylesheet"
   />
-  <script src="./assets/js/index.js"></script>
+  <script type="module" src="./assets/js/index.js"></script>
   <body>
     <div class="jumbo-wrapper">
       <header>
@@ -21,11 +21,26 @@
             <li class="img-list-item">
               <img src="./assets/images/logo.svg" alt="" />
             </li>
-            <li><a href="#" class="nav-link">My Projects</a></li>
-            <li><a href="#" class="nav-link">Experience</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#" class="nav-link">Blog</a></li>
-            <li><a href="#" class="nav-link">About Me</a></li>
+            <li>
+              <a href="#" class="nav-link" id="my-projects-anchor"
+                >My Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="./experience.html"
+                class="nav-link"
+                id="experience-anchor"
+                >Experience</a
+              >
+            </li>
+            <li>
+              <a href="#skills" class="nav-link" id="skills-anchor">Skills</a>
+            </li>
+            <li><a href="#" class="nav-link" id="blog-anchor">Blog</a></li>
+            <li>
+              <a class="nav-link" id="about-me-anchor">About Me</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -47,7 +62,7 @@
           ></path>
         </svg>
       </a>
-      <div class="wrapper">
+      <div class="carousel">
         <div class="social-links">
           <a href="https://github.com/jerilMJ" target="#"
             ><img src="./assets/images/github.svg" alt=""/></a
@@ -55,7 +70,7 @@
             ><img src="./assets/images/linkedin.svg" alt=""
           /></a>
         </div>
-        <div class="main-container first" class="appear-rigt">
+        <div class="carousel-item first appear-rigt">
           <div class="pic-cell my-pic-cell">
             <img src="./assets/images/myPic.jpg" alt="" class="my-pic" />
           </div>
@@ -75,7 +90,7 @@
             </p>
           </div>
         </div>
-        <div class="main-container" class="fade-left">
+        <div class="carousel-item fade-right invis">
           <div class="content about-me">
             <h4>My Hardware Setup</h4>
             <div class="table-display">
@@ -101,7 +116,7 @@
             </div>
           </div>
         </div>
-        <div class="main-container" class="fade-left">
+        <div class="carousel-item fade-right invis">
           <div class="pic-cell many-pics">
             <img src="./assets/images/windows.svg" alt="" class="windows" />
             <img src="./assets/images/tux.svg" alt="" class="tux" />
