@@ -1,0 +1,163 @@
+$normal-padding: 25px 40px;
+
+body {
+	* {
+		background: none;
+		margin: 0;
+		padding: 0;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 11pt;
+	}
+
+	sup {
+		font-size: xx-small;
+		vertical-align: top;
+	}
+
+	ul > li {
+		list-style: circle;
+		list-style-position: inside;
+	}
+}
+
+hr {
+	color: #c5cae9;
+}
+
+@media print {
+	@page {
+		size: A4;
+		margin: 0;
+	}
+}
+
+.resume-body {
+	line-height: 1.15;
+	text-align: justify;
+
+	p,
+	li,
+	th,
+	td {
+		color: #263238;
+	}
+
+	h2 {
+		color: #3949ab;
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+
+	.resume-top {
+		padding: $normal-padding;
+		background-color: #e8eaf6;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.resume-top-left {
+		flex: 1 1 0;
+		.name {
+			font-size: 2rem;
+			font-weight: bold;
+		}
+
+		.title {
+		}
+
+		.tile {
+			.tile-img {
+				float: left;
+				height: 1rem;
+				margin: 0;
+			}
+			.tile-text {
+				margin-left: 5px;
+				display: inline;
+			}
+		}
+	}
+
+	.resume-top-right {
+		flex: 1 1 0;
+		display: flex;
+		flex-direction: column-reverse;
+
+		.social-medias {
+			display: flex;
+			flex-direction: row-reverse;
+
+			a {
+				margin-left: 5px;
+				img {
+					height: 1.5em;
+				}
+			}
+		}
+
+		.address {
+			bottom: 0;
+		}
+	}
+
+	.objective {
+		padding: $normal-padding;
+	}
+
+	.skills {
+		padding: $normal-padding;
+		.skills-body {
+			display: flex;
+
+			.soft-skills {
+				flex: 1 1 0;
+			}
+
+			.hard-skills {
+				flex: 1 1 0;
+			}
+		}
+	}
+
+	.education {
+		padding: $normal-padding;
+		.education-table {
+			text-align: left;
+		}
+
+		th,
+		td {
+			border: 1px solid #e8eaf6;
+			padding: 5px;
+		}
+	}
+
+	.work-experience {
+		padding: $normal-padding;
+		.work-experience-body {
+			display: flex;
+			width: 100%;
+
+			:first-child {
+				margin-right: 5px;
+			}
+
+			.card {
+				padding: 8px;
+				background-color: #e8eaf6;
+				border-radius: 10px;
+				display: block;
+				flex: 1 1 0;
+
+				p > a {
+					color: #616161;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	.hobbies-interests {
+		padding: $normal-padding;
+	}
+}

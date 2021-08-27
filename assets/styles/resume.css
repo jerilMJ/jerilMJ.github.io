@@ -1,0 +1,190 @@
+body * {
+  background: none;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11pt;
+}
+
+body sup {
+  font-size: xx-small;
+  vertical-align: top;
+}
+
+body ul > li {
+  list-style: circle;
+  list-style-position: inside;
+}
+
+hr {
+  color: #c5cae9;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}
+
+.resume-body {
+  line-height: 1.15;
+  text-align: justify;
+}
+
+.resume-body p,
+.resume-body li,
+.resume-body th,
+.resume-body td {
+  color: #263238;
+}
+
+.resume-body h2 {
+  color: #3949ab;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.resume-body .resume-top {
+  padding: 25px 40px;
+  background-color: #e8eaf6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.resume-body .resume-top-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+.resume-body .resume-top-left .name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.resume-body .resume-top-left .tile .tile-img {
+  float: left;
+  height: 1rem;
+  margin: 0;
+}
+
+.resume-body .resume-top-left .tile .tile-text {
+  margin-left: 5px;
+  display: inline;
+}
+
+.resume-body .resume-top-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.resume-body .resume-top-right .social-medias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.resume-body .resume-top-right .social-medias a {
+  margin-left: 5px;
+}
+
+.resume-body .resume-top-right .social-medias a img {
+  height: 1.5em;
+}
+
+.resume-body .resume-top-right .address {
+  bottom: 0;
+}
+
+.resume-body .objective {
+  padding: 25px 40px;
+}
+
+.resume-body .skills {
+  padding: 25px 40px;
+}
+
+.resume-body .skills .skills-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.resume-body .skills .skills-body .soft-skills {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+.resume-body .skills .skills-body .hard-skills {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+.resume-body .education {
+  padding: 25px 40px;
+}
+
+.resume-body .education .education-table {
+  text-align: left;
+}
+
+.resume-body .education th,
+.resume-body .education td {
+  border: 1px solid #e8eaf6;
+  padding: 5px;
+}
+
+.resume-body .work-experience {
+  padding: 25px 40px;
+}
+
+.resume-body .work-experience .work-experience-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.resume-body .work-experience .work-experience-body :first-child {
+  margin-right: 5px;
+}
+
+.resume-body .work-experience .work-experience-body .card {
+  padding: 8px;
+  background-color: #e8eaf6;
+  border-radius: 10px;
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+.resume-body .work-experience .work-experience-body .card p > a {
+  color: #616161;
+  font-weight: bold;
+}
+
+.resume-body .hobbies-interests {
+  padding: 25px 40px;
+}
+/*# sourceMappingURL=resume.css.map */
