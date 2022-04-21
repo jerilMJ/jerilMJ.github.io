@@ -24,6 +24,7 @@ hr {
   @page {
     size: A4;
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -165,11 +166,12 @@ hr {
   width: 100%;
 }
 
-.resume-body .work-experience .work-experience-body :first-child {
-  margin-right: 5px;
+.resume-body .work-experience .work-experience-body :last-child {
+  margin-right: 0px;
 }
 
 .resume-body .work-experience .work-experience-body .card {
+  margin-right: 5px;
   padding: 8px;
   background-color: #e8eaf6;
   border-radius: 10px;
@@ -184,7 +186,22 @@ hr {
   font-weight: bold;
 }
 
-.resume-body .hobbies-interests {
+.resume-body .hobbies-certs {
   padding: 25px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.resume-body .hobbies-certs .hobbies {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+.resume-body .hobbies-certs .certs {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
 }
 /*# sourceMappingURL=resume.css.map */
